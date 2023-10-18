@@ -145,6 +145,7 @@ else # argument not provided
 
 		RESULT=$(
 			(get_fzf_results) | fzf-tmux \
+                --color=bg+:-1,gutter:-1,bg:-1 \
 				--bind "$FIND_BIND" \
 				--bind "$SESSION_BIND" \
 				--bind "$TAB_BIND" \
@@ -159,6 +160,7 @@ else # argument not provided
 	detached)
 		RESULT=$(
 			(get_fzf_results) | fzf \
+                --color=bg+:-1,gutter:-1,bg:-1 \
 				--bind "$FIND_BIND" \
 				--bind "$SESSION_BIND" \
 				--bind "$TAB_BIND" \
@@ -173,6 +175,7 @@ else # argument not provided
 	serverless)
 		RESULT=$(
 			(get_fzf_results) | fzf \
+                --color=bg+:-1,gutter:-1,bg:-1 \
 				--bind "$FIND_BIND" \
 				--bind "$TAB_BIND" \
 				--bind "$ZOXIDE_BIND" \
